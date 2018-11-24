@@ -24,7 +24,9 @@ namespace WishList
                 app.UseDeveloperExceptionPage();
             }                
             else
+            {
                 app.UseExceptionHandler("/Home/Error");
+            }                
 
             app.UseMvcWithDefaultRoute();
         }
